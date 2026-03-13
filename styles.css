@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navigation */
+
+.title_bar {
+    background-color: #609957;
+    color: #070A11;
+}
+
+.nav_bar {
+    background-color: #A7D588;
+    color: #070A11;
+    text-decoration: none;
+}
