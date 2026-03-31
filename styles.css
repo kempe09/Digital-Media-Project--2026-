@@ -1,13 +1,17 @@
 /* Colour Variables & Setup */
 
 :root {
-    --darkest_green: #42753b;
-    --dark_green: #609957;
+    --darkest_green: #274722;
+    --dark_green: #577542;
+    --green: #609957;
     --light_green: #A7D588;
     --white: #E8E5D4;
     --black: #070A11;
+    --dark_grey: #2E2D2D;
     --orange: #F7A151;
-    --blue: #5186f7;
+    --dark_orange: #CF6F16;
+    --blue: #3e45d6;
+    --light_blue: #6192fd;
     --grey: #b8b4a2;
 }
 
@@ -19,13 +23,17 @@
 /* Navigation */
 
 .title_bar {
-    background-color: var(--dark_green);
-    color: #070A11;
+    background-color: var(--green);
+    color: var(--black);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px; 
     outline: 1px solid var(--black);
+}
+
+.title_bar.dark {
+    background-color: var(--darkest_green);
 }
 
 .title_container {
@@ -47,6 +55,10 @@
     outline: 1px solid var(--black);
 }
 
+.nav_bar.dark {
+    background-color: var(--dark_green); 
+}
+
 .link {
     color: var(--black);
     text-decoration: none;
@@ -54,6 +66,10 @@
 
 .link:hover {
     color: var(--dark_green);
+}
+
+.link.dark:hover {
+    color: var(--green);
 }
 
 /* Dark & Light Mode Button */
@@ -68,13 +84,25 @@
     display: flex;
     justify-content: space-between;
     width: 85px;
+    padding: 5px 10px;
+}
+
+#moon_icon {
+    color: var(--white);
+}
+
+
+#moon_icon.dark {
+    color: var(--blue);
 }
 
 #sun_icon {
-    background-color: var(--orange);
-    width: 35px;
-    height: 35px;
-    border-radius: 20px;
+    color: var(--orange);
+}
+
+
+#sun_icon.dark {
+    color: var(--white);
 }
 
 /* Body */
@@ -82,6 +110,10 @@
 .background {
     background-color: var(--grey);
     z-index: 1;
+}
+
+.background.dark {
+    background-color: var(--black);
 }
 
 .body {
@@ -95,8 +127,17 @@
     outline: 1px solid var(--black);
 }
 
+.body.dark {
+    background-color: var(--dark_grey);
+}
+
 .text {
     margin: 20px;
+    color: var(--black);
+}
+
+.text.dark {
+    color: var(--white);
 }
 
 .button {
@@ -111,7 +152,16 @@
 }
 
 .button:hover {
-    background-color: var(--dark_green);
+    background-color: var(--green);
+}
+
+.button.dark {
+    background-color: var(--darkest_green);
+    border: 1px solid var(--black);
+}
+
+.button.dark:hover {
+    background-color: var(--dark_green);;
 }
 
 /* Images */
@@ -128,4 +178,8 @@
     font-size: 16px;
     color: var(--blue);
     text-decoration: none;
+}
+
+.image_link:hover {
+    color: var(--light_blue);
 }
