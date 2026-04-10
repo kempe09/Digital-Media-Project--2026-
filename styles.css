@@ -1,185 +1,202 @@
 /* Colour Variables & Setup */
 
 :root {
-    --darkest_green: #274722;
-    --dark_green: #577542;
-    --green: #609957;
-    --light_green: #A7D588;
-    --white: #E8E5D4;
-    --black: #070A11;
-    --dark_grey: #2E2D2D;
-    --orange: #F7A151;
-    --dark_orange: #CF6F16;
-    --blue: #3e45d6;
-    --light_blue: #6192fd;
-    --grey: #b8b4a2;
+  --darkest_green: #274722;
+  --dark_green: #577542;
+  --green: #609957;
+  --light_green: #a7d588;
+  --white: #e8e5d4;
+  --black: #070a11;
+  --dark_grey: #2e2d2d;
+  --orange: #f7a151;
+  --dark_orange: #cf6f16;
+  --blue: #3e45d6;
+  --light_blue: #6192fd;
+  --grey: #b8b4a2;
 }
 
 * {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Navigation */
 
 .title_bar {
-    background-color: var(--green);
-    color: var(--black);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px; 
-    outline: 1px solid var(--black);
+  background-color: var(--green);
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  outline: 1px solid var(--black);
 }
 
 .title_bar.dark {
-    background-color: var(--darkest_green);
+  background-color: var(--darkest_green);
 }
 
 .title_container {
-    width: 92%;
-    margin-left: 2%;
-    justify-content: center;
-    text-align: center;
+  width: 92%;
+  margin-left: 2%;
+  justify-content: center;
+  text-align: center;
 }
 
 .nav_bar {
-    font-size: 20px;
-    background-color: var(--light_green);
-    padding: 20px;
-    display: flex;
-    text-align: center;
-    justify-content: space-evenly;
-    position: relative;
-    z-index: 3;
-    outline: 1px solid var(--black);
+  font-size: 18px;
+  background-color: var(--light_green);
+  padding: 15px;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  position: relative;
+  z-index: 3;
+  outline: 1px solid var(--black);
 }
 
 .nav_bar.dark {
-    background-color: var(--dark_green); 
+  background-color: var(--dark_green);
 }
 
 .link {
-    color: var(--black);
-    text-decoration: none;
+  color: var(--black);
+  text-decoration: none;
 }
 
 .link:hover {
-    color: var(--dark_green);
+  color: var(--dark_green);
 }
 
 .link.dark:hover {
-    color: var(--green);
+  color: var(--green);
 }
 
 /* Dark & Light Mode Button */
 
 #dark_light_button {
-    background-color: var(--black);
-    color: var(--white);
-    border: none;
-    border-radius: 25px;
-    font-size: 24px;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    width: 85px;
-    padding: 5px 10px;
+  background-color: var(--black);
+  color: var(--white);
+  border: none;
+  border-radius: 25px;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  width: 85px;
+  padding: 5px 10px;
 }
 
 #moon_icon {
-    color: var(--white);
+  color: var(--white);
 }
 
-
 #moon_icon.dark {
-    color: var(--blue);
+  color: var(--blue);
 }
 
 #sun_icon {
-    color: var(--orange);
+  color: var(--orange);
 }
 
-
 #sun_icon.dark {
-    color: var(--white);
+  color: var(--white);
 }
 
 /* Body */
 
 .background {
-    background-color: var(--grey);
-    z-index: 1;
+  background-color: var(--grey);
+  z-index: 1;
 }
 
 .background.dark {
-    background-color: var(--black);
+  background-color: var(--black);
 }
 
 .body {
-    font-size: 20px;
-    background-color: var(--white);
-    width: 40%;
-    min-height: 90vh;
-    justify-self: center;
-    padding: 50px;
-    z-index: 2;
-    outline: 1px solid var(--black);
+  font-size: 18px;
+  background-color: var(--white);
+  min-height: 90vh;
+  margin: 0px 25%;
+  justify-self: center;
+  padding: 50px;
+  z-index: 2;
+  outline: 1px solid var(--black);
 }
 
 .body.dark {
-    background-color: var(--dark_grey);
+  background-color: var(--dark_grey);
 }
 
 .text {
-    margin: 20px;
-    color: var(--black);
+  margin: 20px;
+  line-height: 150%;
+  color: var(--black);
 }
 
 .text.dark {
-    color: var(--white);
+  color: var(--white);
 }
 
 .button {
-    font-size: 22px;
-    font-weight: 600;
-    margin-top: 50px;
-    padding: 20px;
-    width: 100%;
-    cursor: pointer;
-    background-color: var(--light_green);
-    border: 1px solid var(--darkest_green);
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 50px;
+  padding: 20px;
+  width: 100%;
+  cursor: pointer;
+  background-color: var(--light_green);
+  border: 1px solid var(--darkest_green);
 }
 
 .button:hover {
-    background-color: var(--green);
+  background-color: var(--green);
 }
 
 .button.dark {
-    background-color: var(--darkest_green);
-    border: 1px solid var(--black);
+  background-color: var(--darkest_green);
+  border: 1px solid var(--black);
 }
 
 .button.dark:hover {
-    background-color: var(--dark_green);;
+  background-color: var(--dark_green);
+}
+
+.outer_link {
+  font-size: 18px;
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.outer_link:hover {
+  color: var(--light_blue);
 }
 
 /* Images */
 
 .image_container {
-    margin: 20px;
+  margin: 20px;
 }
 
 .image {
-    width: 100%;
+  width: 100%;
 }
 
 .image_link {
-    font-size: 16px;
-    color: var(--blue);
-    text-decoration: none;
+  font-size: 16px;
+  color: var(--blue);
+  text-decoration: none;
 }
 
 .image_link:hover {
-    color: var(--light_blue);
+  color: var(--light_blue);
+}
+
+/* Media Queries */
+
+@media (max-width: 1000px) {
+  .body {
+    margin: 0px 12%;
+  }
 }

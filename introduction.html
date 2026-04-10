@@ -1,61 +1,90 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
+  <head>
     <!-- link the stylesheet -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <!-- title and icon -->
     <title>Stop Using AI</title>
-	<!-- define metadata -->
-    <meta charset="UTF-8">
-    <meta name="description" content="A website raising awareness on the negative effects of AI.">
-    <meta name="keywords" content="AI, environment">
-    <link rel="icon" href="images/icon.png">
-</head>
-<body>
+    <!-- define metadata -->
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="A website raising awareness on the negative effects of AI."
+    />
+    <meta name="keywords" content="AI, environment" />
+    <link rel="icon" href="images/icon.svg" />
+  </head>
+  <body>
     <!-- navigation -->
     <div class="title_bar">
-        <div class="title_container"><h1>Stop Using AI</h1></div>
-        <div class="button_container"><button id="dark_light_button" onclick="toggleDarkMode()"><p id="sun_icon">☀︎</p><p id="moon_icon">⏾</p></button></div>
+      <div class="title_container"><h1>Stop Using AI</h1></div>
+      <div class="button_container">
+        <button id="dark_light_button" onclick="toggleDarkMode()">
+          <p id="sun_icon">☀︎</p>
+          <p id="moon_icon">☽</p>
+        </button>
+      </div>
     </div>
     <nav class="nav_bar">
-        <a href="introduction.html" class="link">Introduction</a>
-        <a href="how_does_it_work.html" class="link">How Does It Work?</a>
-        <a href="cognitive.html" class="link">Cognitive Effects</a>
-        <a href="environmental.html" class="link">Environmental Effects</a>
-        <a href="how_to_stop.html" class="link">How To Stop</a>
+      <a href="introduction.html" class="link">Introduction</a>
+      <a href="how_does_it_work.html" class="link">How Does It Work?</a>
+      <a href="cognitive.html" class="link">Cognitive Effects</a>
+      <a href="environmental.html" class="link">Environmental Effects</a>
+      <a href="how_to_stop.html" class="link">How To Stop</a>
     </nav>
     <!-- body -->
     <div class="background">
-        <div class="body">
-            <h1 class="text">Introduction</h1>
-            <br>
-            <p class="text">Artificial Intelligence has skyrocketed in the past few years. We have recently entered the generative AI era, with ChatGPT released in 2022 and Gemini following in 2023. It has become the norm for people to use AI for everything — schoolwork, personal issues, or any random question? Just ask ChatGPT! </p>
-            <br>
-            <div class="image_container">
-                <img src="images/chatgpt.jpg" alt="A  screen with ChatGPT open." class="image">
-                <a href="https://unsplash.com/photos/a-computer-screen-with-a-bunch-of-buttons-on-it-drwpcjkvxuU" class="image_link" target="_blank">A  screen with ChatGPT open.</a>
-            </div>
-            <br>
-            <br>
-            <p class="text">But have we really thought about what this means? When we talk about the consequences of AI, some people’s minds wander to their job becoming obsolete, or worse yet, robots overthrowing humanity.</p>
-            <br>
-            <p class="text">In reality, the consequences of overusing AI are far less obvious. Things like:</p>
-            <ul>
-                <li class="text">Receiving misinformation</li>
-                <li class="text">Reduced critical thinking skills</li>
-                <li class="text">Large amounts of water wasted</li>
-            </ul>
-            <br>
-            <p class="text">Because of this subtlety, it can be hard to realise that using generative AI is harmful. This website aims to convey the reasons why you should lessen (or stop entirely) your usage of generative AI.</p>
-            <br>
-            <a href="how_does_it_work.html">
-                <button class="button">
-                How Does AI Work? →
-                </button>
-            </a>
+      <div class="body">
+        <h2 class="text">Introduction</h2>
+        <br />
+        <p class="text">
+          Artificial intelligence has skyrocketed in the past few years. We have
+          recently entered the generative AI era, with ChatGPT released in 2022
+          and Gemini following in 2023. It has become the norm for people to use
+          AI for everything — schoolwork, personal issues, or any random
+          question? Just ask ChatGPT!
+        </p>
+        <br />
+        <div class="image_container">
+          <img
+            src="images/chatgpt.webp"
+            alt="A  screen with ChatGPT open."
+            class="image"
+          />
+          <a
+            href="https://unsplash.com/photos/a-computer-screen-with-a-bunch-of-buttons-on-it-drwpcjkvxuU"
+            class="image_link"
+            target="_blank"
+            >A screen with ChatGPT open.</a
+          >
         </div>
+        <br />
+        <p class="text">
+          But have we really thought about what this means? When we talk about
+          the consequences of AI, some people’s minds wander to their job
+          becoming obsolete, or worse yet, robots overthrowing humanity.
+        </p>
+        <p class="text">
+          In reality, the consequences of overusing AI are far less obvious.
+          Things like:
+        </p>
+        <ul>
+          <li class="text">Receiving misinformation</li>
+          <li class="text">Reduced critical thinking skills</li>
+          <li class="text">Large amounts of water wasted</li>
+        </ul>
+        <br />
+        <p class="text">
+          Because of this subtlety, it can be hard to realise that using
+          generative AI is harmful. This website aims to convey the reasons why
+          you should lessen (or stop entirely) your usage of generative AI.
+        </p>
+        <a href="how_does_it_work.html">
+          <button class="button">How Does AI Work? →</button>
+        </a>
+      </div>
     </div>
     <!-- add script -->
-	<script src="./script.js"></script> 
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>
