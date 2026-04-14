@@ -11,12 +11,18 @@
       name="description"
       content="A website raising awareness on the negative effects of AI."
     />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="AI, environment" />
     <link rel="icon" href="images/icon.svg" />
   </head>
   <body>
     <!-- navigation -->
     <div class="title_bar">
+      <div class="hamburger_icon" onclick="openMobileMenu()">
+        <span class="hamburger_line"></span>
+        <span class="hamburger_line"></span>
+        <span class="hamburger_line"></span>
+      </div>
       <div class="title_container"><h1>Stop Using AI</h1></div>
       <div class="button_container">
         <button id="dark_light_button" onclick="toggleDarkMode()">
@@ -24,6 +30,17 @@
           <p id="moon_icon">☽</p>
         </button>
       </div>
+    </div>
+    <div id="mobile_menu">
+      <a href="introduction.html" class="mobile_link">Introduction</a>
+      <hr />
+      <a href="how_does_it_work.html" class="mobile_link">How Does It Work?</a>
+      <hr />
+      <a href="cognitive.html" class="mobile_link">Cognitive Effects</a>
+      <hr />
+      <a href="environmental.html" class="mobile_link">Environmental Effects</a>
+      <hr />
+      <a href="how_to_stop.html" class="mobile_link">How To Stop</a>
     </div>
     <nav class="nav_bar">
       <a href="introduction.html" class="link">Introduction</a>

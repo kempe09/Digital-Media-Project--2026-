@@ -30,6 +30,7 @@
   justify-content: center;
   padding: 15px;
   outline: 1px solid var(--black);
+  position: relative;
 }
 
 .title_bar.dark {
@@ -43,20 +44,60 @@
   text-align: center;
 }
 
+.hamburger_icon {
+  display: none;
+}
+
 .nav_bar {
-  font-size: 18px;
   background-color: var(--light_green);
+  position: relative;
+  font-size: 18px;
   padding: 15px;
   display: flex;
   text-align: center;
   justify-content: space-evenly;
-  position: relative;
   z-index: 3;
   outline: 1px solid var(--black);
 }
 
 .nav_bar.dark {
   background-color: var(--dark_green);
+}
+
+#mobile_menu {
+  display: none;
+  background-color: var(--light_green);
+  position: relative;
+  font-size: 18px;
+  text-align: center;
+  z-index: 3;
+  outline: 1px solid var(--black);
+}
+
+#mobile_menu.open {
+  display: grid;
+}
+
+#mobile_menu.dark {
+  background-color: var(--dark_green);
+}
+
+#mobile_menu hr {
+  border: 1px solid var(--dark_green);
+}
+
+#mobile_menu hr.dark {
+  border: 1px solid var(--black);
+}
+
+.mobile_link {
+  color: var(--black);
+  text-decoration: none;
+  margin: 20px 0;
+}
+
+.mobile_link:hover {
+  color: var(--dark_green);
 }
 
 .link {
@@ -195,8 +236,90 @@
 
 /* Media Queries */
 
-@media (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
   .body {
     margin: 0px 12%;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  #mobile_menu.open {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .nav_bar {
+    display: none;
+  }
+
+  .title_container {
+    margin-left: -5%;
+  }
+
+  .hamburger_icon {
+    display: block;
+    width: 75px;
+    height: 50px;
+    cursor: pointer;
+  }
+
+  .hamburger_line {
+    display: block;
+    width: 64px;
+    height: 8px;
+    background-color: var(--black);
+    margin: 6px 0;
+    border-radius: 4px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .hamburger_line {
+    width: 48px;
+    height: 6px;
+  }
+
+  .nav_bar #mobile_menu {
+    font-size: 11px;
+  }
+
+  .title_container {
+    font-size: 13px;
+  }
+
+  #dark_light_button {
+    width: 75px;
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 21px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  li {
+    font-size: 16px;
+  }
+
+  .button {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .body {
+    margin: 0px 6%;
+    padding: 25px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .body {
+    margin: 0px;
+    padding: 25px;
   }
 }
