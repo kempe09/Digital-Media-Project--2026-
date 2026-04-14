@@ -103,6 +103,7 @@
 .link {
   color: var(--black);
   text-decoration: none;
+  cursor: pointer;
 }
 
 .link:hover {
@@ -232,6 +233,48 @@
 
 .image_link:hover {
   color: var(--light_blue);
+}
+
+/* Content */
+
+#introduction {
+  display: none;
+}
+
+#introduction.open {
+  display: grid;
+}
+
+#how_does_it_work {
+  display: none;
+}
+
+#how_does_it_work.open {
+  display: grid;
+}
+
+#cognitive_effects {
+  display: none;
+}
+
+#cognitive_effects.open {
+  display: grid;
+}
+
+#environmental_effects {
+  display: none;
+}
+
+#environmental_effects.open {
+  display: grid;
+}
+
+#how_to_stop {
+  display: none;
+}
+
+#how_to_stop.open {
+  display: grid;
 }
 
 /* Media Queries */

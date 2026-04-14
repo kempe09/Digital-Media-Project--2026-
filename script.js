@@ -25,3 +25,16 @@ function openMobileMenu() {
   let menu = document.getElementById("mobile_menu");
   menu.classList.toggle("open");
 }
+
+// change content
+function changeContent(newContentID) {
+  let content = document.getElementsByClassName("body");
+  for (let i = 0; i < content.length; i++) {
+    if (content[i].classList.contains("open")) {
+      content[i].classList.remove("open");
+    }
+  }
+  let newContent = document.getElementById(newContentID);
+  newContent.classList.add("open");
+  window.scrollTo(0, 0);
+}
