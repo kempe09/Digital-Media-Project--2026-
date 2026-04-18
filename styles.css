@@ -44,6 +44,11 @@
   text-align: center;
 }
 
+h1 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
 .hamburger_icon {
   display: none;
 }
@@ -171,6 +176,11 @@
   background-color: var(--dark_grey);
 }
 
+h2 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
 .text {
   margin: 20px;
   line-height: 150%;
@@ -179,6 +189,10 @@
 
 .text.dark {
   color: var(--white);
+}
+
+.bulletpoint {
+  margin: 0;
 }
 
 .button {
