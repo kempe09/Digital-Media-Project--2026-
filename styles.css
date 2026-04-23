@@ -1,7 +1,7 @@
 /* Colour Variables & Setup */
 
 :root {
-  --darkest_green: #274722;
+  --darkest_green: #33572e;
   --dark_green: #577542;
   --green: #609957;
   --light_green: #a7d588;
@@ -31,10 +31,12 @@
   padding: 15px;
   outline: 1px solid var(--black);
   position: relative;
+  transition: 0.6s ease;
 }
 
 .title_bar.dark {
   background-color: var(--darkest_green);
+  transition: 0.6s ease;
 }
 
 .title_container {
@@ -45,7 +47,7 @@
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 500;
 }
 
@@ -63,10 +65,12 @@ h1 {
   justify-content: space-evenly;
   z-index: 3;
   outline: 1px solid var(--black);
+  transition: 0.6s ease;
 }
 
 .nav_bar.dark {
   background-color: var(--dark_green);
+  transition: 0.6s ease;
 }
 
 #mobile_menu {
@@ -77,6 +81,7 @@ h1 {
   text-align: center;
   z-index: 3;
   outline: 1px solid var(--black);
+  transition: 0.6s ease;
 }
 
 #mobile_menu.open {
@@ -85,14 +90,17 @@ h1 {
 
 #mobile_menu.dark {
   background-color: var(--dark_green);
+  transition: 0.6s ease;
 }
 
 #mobile_menu hr {
   border: 1px solid var(--dark_green);
+  transition: 0.6s ease;
 }
 
 #mobile_menu hr.dark {
   border: 1px solid var(--black);
+  transition: 0.6s ease;
 }
 
 .mobile_link {
@@ -109,6 +117,7 @@ h1 {
   color: var(--black);
   text-decoration: none;
   cursor: pointer;
+  transition: 0.6s ease;
 }
 
 .link:hover {
@@ -125,8 +134,7 @@ h1 {
   background-color: var(--black);
   color: var(--white);
   border: none;
-  border-radius: 25px;
-  font-size: 24px;
+  border-radius: 32px;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -136,18 +144,24 @@ h1 {
 
 #moon_icon {
   color: var(--white);
+  font-size: 28px;
+  transition: 0.6s ease;
 }
 
 #moon_icon.dark {
   color: var(--blue);
+  transition: 0.6s ease;
 }
 
 #sun_icon {
   color: var(--orange);
+  font-size: 28px;
+  transition: 0.6s ease;
 }
 
 #sun_icon.dark {
   color: var(--white);
+  transition: 0.6s ease;
 }
 
 /* Body */
@@ -155,10 +169,12 @@ h1 {
 .background {
   background-color: var(--grey);
   z-index: 1;
+  transition: 0.6s ease;
 }
 
 .background.dark {
   background-color: var(--black);
+  transition: 0.6s ease;
 }
 
 .body {
@@ -170,10 +186,12 @@ h1 {
   padding: 50px;
   z-index: 2;
   outline: 1px solid var(--black);
+  transition: 0.6s ease;
 }
 
 .body.dark {
   background-color: var(--dark_grey);
+  transition: 0.6s ease;
 }
 
 h2 {
@@ -185,10 +203,12 @@ h2 {
   margin: 20px;
   line-height: 150%;
   color: var(--black);
+  transition: 0.6s ease;
 }
 
 .text.dark {
   color: var(--white);
+  transition: 0.6s ease;
 }
 
 .bulletpoint {
@@ -204,6 +224,7 @@ h2 {
   cursor: pointer;
   background-color: var(--light_green);
   border: 1px solid var(--darkest_green);
+  transition: 0.6s ease;
 }
 
 .button:hover {
@@ -213,6 +234,7 @@ h2 {
 .button.dark {
   background-color: var(--darkest_green);
   border: 1px solid var(--black);
+  transition: 0.6s ease;
 }
 
 .button.dark:hover {
@@ -311,7 +333,7 @@ h2 {
   }
 
   .title_container {
-    margin-left: -5%;
+    margin-left: -3%;
   }
 
   .hamburger_icon {
@@ -345,11 +367,6 @@ h2 {
     font-size: 13px;
   }
 
-  #dark_light_button {
-    width: 75px;
-    font-size: 20px;
-  }
-
   h2 {
     font-size: 21px;
   }
@@ -365,6 +382,15 @@ h2 {
   .button {
     font-size: 18px;
   }
+  
+  #sun_icon {
+    font-size: 28px;
+  }
+
+  #moon_icon {
+    font-size: 28px;
+  }
+
 }
 
 @media screen and (max-width: 550px) {
@@ -378,5 +404,17 @@ h2 {
   .body {
     margin: 0px;
     padding: 25px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+    .hamburger_icon {
+    width: 60px;
+    height: 40px;
+  }
+
+    .hamburger_line {
+    width: 40px;
+    height: 5px;
   }
 }
