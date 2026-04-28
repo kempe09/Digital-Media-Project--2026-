@@ -23,7 +23,7 @@
         <span class="hamburger_line"></span>
         <span class="hamburger_line"></span>
       </div>
-      <div class="title_container"><h1>Stop Using AI</h1></div>
+      <div class="title_container"><h1 onclick="changeContent('introduction')">Stop Using AI</h1></div>
       <div class="button_container">
         <button id="dark_light_button" onclick="toggleDarkMode()">
           <p id="sun_icon">☀︎</p>
@@ -36,8 +36,8 @@
         >Introduction</a
       >
       <hr />
-      <a class="mobile_link" onclick="changeContent('how_does_it_work')"
-        >How Does It Work?</a
+      <a class="mobile_link" onclick="changeContent('how_does_ai_work')"
+        >How Does AI Work?</a
       >
       <hr />
       <a class="mobile_link" onclick="changeContent('cognitive_effects')"
@@ -54,8 +54,8 @@
     </div>
     <nav class="nav_bar">
       <a class="link" onclick="changeContent('introduction')">Introduction</a>
-      <a class="link" onclick="changeContent('how_does_it_work')"
-        >How Does It Work?</a
+      <a class="link" onclick="changeContent('how_does_ai_work')"
+        >How Does AI Work?</a
       >
       <a class="link" onclick="changeContent('cognitive_effects')"
         >Cognitive Effects</a
@@ -67,6 +67,7 @@
     </nav>
     <!-- body -->
     <div class="background">
+      <!-- introduction content -->
       <div class="body open" id="introduction">
         <h2 class="text">Introduction</h2>
         <br />
@@ -112,15 +113,16 @@
           generative AI is harmful. This website aims to convey the reasons why
           you should lessen (or stop entirely) your usage of generative AI.
         </p>
-        <button class="button" onclick="changeContent('how_does_it_work')">
+        <button class="button" onclick="changeContent('how_does_ai_work')">
           How Does AI Work? →
         </button>
       </div>
-      <div class="body" id="how_does_it_work">
+      <!-- how does AI work content -->
+      <div class="body" id="how_does_ai_work">
         <a onclick="changeContent('introduction')" class="previous_link"
           >← Introduction</a
         >
-        <h2 class="text">How Does It Work?</h2>
+        <h2 class="text">How Does AI Work?</h2>
         <br />
         <p class="text">
           AI is everywhere and we often don't even realise it. Google translate,
@@ -196,9 +198,10 @@
           Cognitive Effects →
         </button>
       </div>
+      <!-- cognitive effects content -->
       <div class="body" id="cognitive_effects">
-        <a onclick="changeContent('how_does_it_work')" class="previous_link"
-          >← How Does It Work?</a
+        <a onclick="changeContent('how_does_ai_work')" class="previous_link"
+          >← How Does AI Work?</a
         >
         <h2 class="text">Cognitive Effects</h2>
         <br />
@@ -270,6 +273,7 @@
           Environmental Effects →
         </button>
       </div>
+      <!-- environmental effects content -->
       <div class="body" id="environmental_effects">
         <a onclick="changeContent('cognitive_effects')" class="previous_link"
           >← Cognitive Effects</a
@@ -356,6 +360,7 @@
           How To Stop →
         </button>
       </div>
+      <!-- how to stop content -->
       <div class="body" id="how_to_stop">
         <a
           onclick="changeContent('environmental_effects')"

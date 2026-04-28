@@ -44,6 +44,7 @@
   margin-left: 2%;
   justify-content: center;
   text-align: center;
+  cursor: pointer;
 }
 
 h1 {
@@ -295,11 +296,11 @@ h2 {
   display: grid;
 }
 
-#how_does_it_work {
+#how_does_ai_work {
   display: none;
 }
 
-#how_does_it_work.open {
+#how_does_ai_work.open {
   display: grid;
 }
 
